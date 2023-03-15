@@ -151,7 +151,8 @@ TGAColor PhongShader::framebuffer(Vector3f& Barycentric, Vex& vex){
 
 	Vector4f shadow_p = MS_view * Vector4f {p[0], p[1], p[2], 1.f};
 	int idx = (int)(shadow_p[0] / shadow_p.w) + (int)(shadow_p[1] / shadow_p.w) * width;
-	float shadow = .3f + 0.7f * (shadowbuffer[idx] + 0.3 > shadow_p[2]);
+	float shadow = .3f + 0.7f * (shadowbuffer[idx] + 0.3 > shadow_p[2]);// z值约大越深，即shadowmap值比观测点还要深，可以看到观测点，返回1;
+	// shadow = 1;
 	Vector2f* tex = vex.texture_coords;
 	Vector3f* normal = vex.normal_coords;
 	Vector2f tex_coords = interpolate(Barycentric.x, Barycentric.y, Barycentric.z, tex[0], tex[1], tex[2], 1);
