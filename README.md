@@ -8,7 +8,7 @@
 - 实现读取切线空间法线贴图
 
 ## Result
-
+(结果从上到下一步步进化)
 flat shading 结果
 
 ![image](https://user-images.githubusercontent.com/24697586/229333121-b9dbd53b-c9de-4919-8f1e-6ea345d0f1e0.png)
