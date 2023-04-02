@@ -55,7 +55,7 @@ flat shading 结果
     
     且projection后可插入 曲面细分(tessellation)、几何着色(geometry shading)。 
     
-    tessellation 影响渲染质量，近的话渲染点多，远的话渲染点少。
+    tessellation 影响渲染质量，近的话渲染点多，远的话渲染点少。将简单的几何图元（如三角形）细分为更复杂的几何形状。
     
     geometry shading，将图元排序并生成新数据，如粒子系统中烟火的生成。
     
