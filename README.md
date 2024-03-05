@@ -61,7 +61,7 @@ flat shading 结果
     
     
     
-    3.4.两步：
+3.4.两步：
     
    ![image](https://user-images.githubusercontent.com/24697586/229333865-9b0b39ac-3121-4777-9832-fe8521b2ee66.png)
     
